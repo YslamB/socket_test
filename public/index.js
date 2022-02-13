@@ -18,7 +18,7 @@ async function ajax(url) {
 /** @returns {void} */
 async function main() {
     // call sample API
-    document.getElementById("random-number").innerText = await ajax("/random");
+    // document.getElementById("random-number").innerText = await ajax("/random");
 
     const socket = io();
     socket.on("connect", () => socket.emit("hello", `Hi there! I am ${window.navigator.userAgent}`));
